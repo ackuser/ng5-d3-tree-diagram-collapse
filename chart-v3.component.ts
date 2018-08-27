@@ -35,6 +35,7 @@ export class ChartV3Component implements OnInit {
     this.svg = D3.select('.container').append('svg')
     .attr('width', this.width + this.margin.right + this.margin.left)
     .attr('height', this.height + this.margin.top + this.margin.bottom)
+     .append("g")
     .attr('transform', 'translate(' + this.margin.left + ',' + this.margin.top + ')');
 
     this.duration = 750;
